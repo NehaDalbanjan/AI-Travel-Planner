@@ -1,0 +1,196 @@
+{% extends "base.html" %}
+
+{% block title %}Trip Plan{% endblock %}
+
+{% block content %}
+
+<div class="result-container">
+
+    <h1>🌍 Your AI Travel Plan</h1>
+
+    <!-- Trip Summary -->
+
+    <div class="trip-summary">
+
+        <h2>🧳 Trip Summary</h2>
+
+        <div class="summary-grid">
+
+            <div class="info-card">
+                <h3>📍 Source</h3>
+                <p>{{ source }}</p>
+            </div>
+
+            <div class="info-card">
+                <h3>🗺 Destination</h3>
+                <p>{{ destination }}</p>
+            </div>
+
+            <div class="info-card">
+                <h3>📅 Days</h3>
+                <p>{{ days }}</p>
+            </div>
+
+            <div class="info-card">
+                <h3>👥 Travelers</h3>
+                <p>{{ travelers }}</p>
+            </div>
+
+            <div class="info-card">
+                <h3>🚌 Transport</h3>
+                <p>{{ transport }}</p>
+            </div>
+
+            <div class="info-card">
+                <h3>🏨 Hotel Type</h3>
+                <p>{{ hotel_type }}</p>
+            </div>
+
+            <div class="info-card">
+                <h3>💰 Budget</h3>
+                <p>₹{{ budget }}</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Tourist Places -->
+
+    <div class="trip-summary">
+
+        <h2>📍 Tourist Places in {{ destination }}</h2>
+
+        <div class="places-grid">
+
+            {% for p in place.places %}
+
+            <div class="place-card">
+
+                <h3>{{ p.place_name }}</h3>
+
+                <p><strong>Category:</strong> {{ p.category }}</p>
+
+                <p><strong>Budget:</strong> {{ p.budget_tier }}</p>
+
+                <p><strong>Best Season:</strong> {{ p.best_season }}</p>
+
+                <p><strong>Recommended Days:</strong> {{ p.days_recommended }}</p>
+
+                <p><strong>Popularity:</strong> ⭐ {{ p.popularity_score }}/10</p>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+
+    <!-- Recommended Hotels -->
+
+    <div class="hotel-section">
+
+        <h2>🏨 Recommended Hotels</h2>
+
+        {% if hotel_details %}
+
+        <div class="hotel-grid">
+
+            <div class="hotel-card">
+                <h3>💚 Budget Stay</h3>
+                <p>{{ hotel_details.Budget_Stay }}</p>
+            </div>
+
+            <div class="hotel-card">
+                <h3>💙 Standard Stay</h3>
+                <p>{{ hotel_details.Standard_Stay }}</p>
+            </div>
+
+            <div class="hotel-card">
+                <h3>💎 Luxury Stay</h3>
+                <p>{{ hotel_details.Luxury_Stay }}</p>
+            </div>
+
+        </div>
+
+        {% else %}
+
+        <p style="text-align:center;">
+            No hotel recommendations available.
+        </p>
+
+        {% endif %}
+
+    </div>
+
+
+    <!-- Expense Breakdown -->
+
+    <div class="expense-section">
+
+        <h2>💰 Expense Breakdown</h2>
+
+        <div class="expense-grid">
+
+            <div class="expense-card">
+                <h3>🤖 Predicted Cost</h3>
+                <p>₹{{ prediction }}</p>
+            </div>
+
+            <div class="expense-card">
+                <h3>🏨 Accommodation</h3>
+                <p>₹{{ first_place.accommodation_cost }}</p>
+            </div>
+
+            <div class="expense-card">
+                <h3>🍽 Food</h3>
+                <p>₹{{ first_place.food_cost }}</p>
+            </div>
+
+            <div class="expense-card">
+                <h3>🚌 Local Transport</h3>
+                <p>₹{{ first_place.transport_local }}</p>
+            </div>
+
+            <div class="expense-card">
+                <h3>🎟 Entry Fee</h3>
+                <p>₹{{ first_place.entry_fee }}</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- AI Itinerary -->
+
+    <div class="itinerary">
+
+        <h2>🤖 AI Generated Itinerary</h2>
+
+        <div class="itinerary-box">
+
+           <div class="itinerary-content">
+    {{ itinerary }}
+</div>
+
+        </div>
+
+    </div>
+
+    
+
+</div>
+
+<div style="text-align:center; margin:30px 0;">
+
+    <a href="/download" class="download-btn">
+        📄 Download Trip Plan PDF
+    </a>
+
+</div>
+
+{% endblock %}

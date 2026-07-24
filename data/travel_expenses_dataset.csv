@@ -1,0 +1,47 @@
+place_name,district,category,budget_tier,min_cost_per_day,max_cost_per_day,accommodation_cost,food_cost,transport_local,entry_fee,best_season,days_recommended,popularity_score,total_min_cost,total_max_cost
+Hampi,Ballari,Heritage,Budget,800,1500,400,300,200,0,Oct-Feb,2,9.5,1600,3000
+Badami,Bagalkote,Heritage,Budget,700,1200,350,250,150,25,Oct-Feb,1,8.5,700,1200
+Pattadakal,Bagalkote,Heritage,Budget,600,1000,300,200,100,30,Oct-Feb,1,7.5,600,1000
+Aihole,Bagalkote,Heritage,Budget,500,900,250,200,100,0,Oct-Feb,1,7.0,500,900
+Bidar,Bidar,Heritage,Budget,600,1100,300,250,150,20,Nov-Feb,1,7.5,600,1100
+Vijayapura (Bijapur),Vijayapura,Heritage,Budget,700,1300,350,300,200,25,Oct-Feb,2,8.0,1400,2600
+Chitradurga Fort,Chitradurga,Heritage,Budget,500,900,250,200,100,20,Oct-Feb,1,7.0,500,900
+Belur-Halebeedu,Hassan,Heritage,Budget,600,1000,300,250,100,0,Oct-Feb,1,8.0,600,1000
+Shravanabelagola,Hassan,Heritage,Budget,500,900,250,200,100,0,Oct-Feb,1,7.5,500,900
+Lakkundi,Gadag,Heritage,Budget,400,800,200,200,100,0,Oct-Feb,1,6.5,400,800
+Anegundi,Koppal,Heritage,Budget,500,900,250,200,100,0,Oct-Feb,1,7.0,500,900
+Coorg (Madikeri),Kodagu,Hill Station,Mid,1500,3000,800,400,300,0,Oct-Mar,2,9.0,3000,6000
+Chikmagalur,Chikmagalur,Hill Station,Mid,1200,2500,600,350,250,0,Sep-Mar,2,8.5,2400,5000
+Nandi Hills,Chikkaballapur,Hill Station,Budget,800,1500,400,300,200,20,Sep-Feb,1,8.0,800,1500
+Kemmanagundi,Chikmagalur,Hill Station,Budget,700,1200,350,250,150,0,Sep-Feb,1,7.0,700,1200
+Agumbe,Shivamogga,Hill Station,Budget,600,1100,300,250,150,0,Nov-Feb,1,7.5,600,1100
+BR Hills (Biligiriranga),Chamarajanagar,Hill Station,Mid,1000,2000,500,300,200,50,Oct-May,1,7.5,1000,2000
+Sakleshpur,Hassan,Hill Station,Mid,1000,2000,500,300,200,0,Oct-Mar,2,7.5,2000,4000
+Gokarna,Uttara Kannada,Beach,Budget,800,1500,400,300,200,0,Oct-Mar,2,8.5,1600,3000
+Karwar,Uttara Kannada,Beach,Budget,700,1300,350,250,150,0,Oct-Mar,1,7.5,700,1300
+Ullal Beach,Dakshina Kannada,Beach,Budget,600,1100,300,250,150,0,Oct-Mar,1,7.0,600,1100
+Malpe Beach,Udupi,Beach,Budget,600,1000,300,200,150,0,Oct-Mar,1,7.5,600,1000
+Murudeshwar,Uttara Kannada,Beach,Budget,700,1200,350,250,150,0,Oct-Mar,1,8.0,700,1200
+Bandipur National Park,Chamarajanagar,Wildlife,Mid,1500,3000,800,400,300,200,Oct-May,2,8.5,3000,6000
+Nagarhole National Park,Kodagu,Wildlife,Mid,1500,3000,800,400,300,200,Oct-May,2,8.5,3000,6000
+Kabini,Mysuru,Wildlife,Premium,3000,8000,2000,500,500,300,Oct-May,2,8.5,6000,16000
+Dandeli,Uttara Kannada,Wildlife,Mid,1200,2500,600,350,250,100,Oct-May,2,8.0,2400,5000
+Bhadra Wildlife Sanctuary,Chikmagalur,Wildlife,Mid,1000,2000,500,300,200,100,Oct-May,1,7.5,1000,2000
+Mysuru,Mysuru,City,Budget,1000,2000,500,300,200,50,Year-round,2,9.0,2000,4000
+Bengaluru,Bengaluru,City,Mid,1500,4000,800,500,200,0,Year-round,2,9.0,3000,8000
+Mangaluru,Dakshina Kannada,City,Budget,800,1500,400,300,150,0,Oct-Mar,1,7.5,800,1500
+Hubballi-Dharwad,Dharwad,City,Budget,700,1300,350,250,150,0,Year-round,1,6.5,700,1300
+Udupi,Udupi,Spiritual,Budget,500,1000,250,200,100,0,Year-round,1,8.0,500,1000
+Dharmasthala,Dakshina Kannada,Spiritual,Budget,400,800,200,150,100,0,Year-round,1,7.5,400,800
+Kukke Subramanya,Dakshina Kannada,Spiritual,Budget,400,800,200,150,100,0,Year-round,1,7.5,400,800
+Sringeri,Chikmagalur,Spiritual,Budget,400,800,200,150,100,0,Year-round,1,7.0,400,800
+Gokarna (Mahabaleshwar),Uttara Kannada,Spiritual,Budget,500,900,250,200,100,0,Year-round,1,7.5,500,900
+Jog Falls,Shivamogga,Waterfall,Budget,600,1100,300,250,150,0,Jun-Jan,1,8.5,600,1100
+Shivanasamudra,Mandya,Waterfall,Budget,500,900,250,200,100,0,Jul-Jan,1,7.5,500,900
+Abbey Falls,Kodagu,Waterfall,Budget,700,1200,350,250,150,15,Jun-Feb,1,7.5,700,1200
+Ramanagara,Ramanagara,Adventure,Budget,800,1500,400,300,200,100,Oct-Mar,1,7.5,800,1500
+Savandurga,Ramanagara,Adventure,Budget,600,1000,300,200,100,0,Oct-Mar,1,7.0,600,1000
+Mullayanagiri Trek,Chikmagalur,Adventure,Budget,700,1200,350,250,150,0,Sep-Feb,1,7.5,700,1200
+Kabini River Lodge,Mysuru,Luxury,Premium,5000,15000,4000,800,200,0,Oct-May,2,8.5,10000,30000
+Evolve Back (Coorg),Kodagu,Luxury,Premium,8000,20000,6000,1000,500,0,Oct-Mar,2,8.0,16000,40000
+The Golden Chariot (Train),Multiple,Luxury,Premium,15000,30000,12000,2000,1000,0,Oct-Mar,7,8.0,105000,210000

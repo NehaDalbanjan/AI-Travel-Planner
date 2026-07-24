@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home | AI Travel Planner
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>✈️ Discover Your Next Adventure</h1>
+
+        <p>
+            Plan your perfect trip with Artificial Intelligence and
+            predict your travel expenses instantly.
+        </p>
+
+        <a href="#planner">
+
+            <button class="hero-btn">
+
+                Start Planning
+
+            </button>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<section id="planner" class="planner-section">
+
+    <div class="planner-card">
+
+        <h2>🌍 Plan Your Trip</h2>
+
+        <form action="/plan" method="POST">
+
+            <input
+                type="text"
+                name="source"
+                placeholder="Source City"
+                required
+            >
+
+            <select name="destination" required>
+
+                <option value="">Select Destination</option>
+
+                {% for destination in destinations %}
+
+                    <option value="{{ destination }}">
+                        {{ destination }}
+                    </option>
+
+                {% endfor %}
+
+            </select>
+
+            <input
+                type="number"
+                name="days"
+                placeholder="Number of Days"
+                min="1"
+                required
+            >
+
+            <input
+                type="number"
+                name="travelers"
+                placeholder="Number of Travelers"
+                min="1"
+                required
+            >
+
+            <select name="transport" required>
+
+                <option value="">Transportation</option>
+
+                <option>Bus</option>
+                <option>Train</option>
+                <option>Car</option>
+                <option>Flight</option>
+
+            </select>
+
+            <select name="hotel_type" required>
+
+                <option value="">Hotel Type</option>
+
+                <option>Budget</option>
+                <option>Standard</option>
+                <option>Luxury</option>
+
+            </select>
+
+            <input
+                type="number"
+                name="budget"
+                placeholder="Budget (₹)"
+                required
+            >
+
+            <button type="submit">
+
+                ✨ Generate AI Travel Plan
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}
